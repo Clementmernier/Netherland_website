@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/*  ---     ---     ---     NAV   ---     ---     ---  */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    padding-bottom: 1.5em;
+    text-align: center;
+    position: relative; /* Nécessaire pour positionner l'image */
+}
+
+.roundFlagHeader {
+    position: absolute; /* Permet de positionner l'image indépendamment du flux normal du document */
+    
+    top: 0; /* Aligne l'image en haut */
+    height: 100%; /* Fait en sorte que l'image prenne toute la hauteur du header */
+    object-fit: cover; /* Assure que l'image garde ses proportions */
+}
+#leftFlag{left: 0;}
+#rightFlag{left: 87%;}
+nav{
+    position: relative;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+/*  ---     ---     ---     CARDS   ---     ---     ---  */
+.PlaceCard {
+    /* background-color: #bebebe; */
+    background: linear-gradient(45deg, gray, rgb(247, 247, 247));;
+    padding: 2%;
+    border-radius: 6%;
+    width: 30%; 
+    box-sizing: border-box; 
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    margin: 3%;
+}
+.banner{
+    object-fit: cover;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.banner:hover {
+    transform: scale(1.15);
+}
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    
+    width: 100%;
+    bottom: 0;
+}
