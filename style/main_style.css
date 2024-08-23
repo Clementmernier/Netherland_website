@@ -10,7 +10,24 @@ header {
     background-color: #333;
     color: #fff;
     padding: 1em 0;
+    padding-bottom: 1.5em;
     text-align: center;
+    position: relative; /* Nécessaire pour positionner l'image */
+}
+
+.roundFlagHeader {
+    position: absolute; /* Permet de positionner l'image indépendamment du flux normal du document */
+    
+    top: 0; /* Aligne l'image en haut */
+    height: 100%; /* Fait en sorte que l'image prenne toute la hauteur du header */
+    object-fit: cover; /* Assure que l'image garde ses proportions */
+}
+
+#leftFlag{left: 0;}
+#rightFlag{left: 87%;}
+
+nav{
+    position: relative;
 }
 
 nav ul {
@@ -29,11 +46,17 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
 }
+
 
 #global_map {
     margin: 20px;
@@ -57,7 +80,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    
     width: 100%;
     bottom: 0;
 }
@@ -65,4 +88,5 @@ footer {
 #bgNLImage {
     width : 80%;
     margin: 10%;
+    margin-top: 3%;
 }
