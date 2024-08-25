@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordéon avec Rectangles</title>
+    <link rel="stylesheet" href="style/style_program.css">
+</head>
+<body>
+    <header>
+        <img src="img/dutchFlagRound.png" class="roundFlagHeader"id="leftFlag">
+        <img src="img/dutchFlagRound.png" class="roundFlagHeader"id="rightFlag">
+        <h1>My trip to the Netherlands</h1>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="places.html">More on the places</a></li>
+              <li><a href="#">The trip off the museums</a></li>
+              <li><a href="program.html">Program</a></li>
+              <li><a href="#">The halt in Belgium</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>The program</h2>
+    <div class="container">
+        <div class="rectangle" id="rect1">
+            <div class="header" onclick="toggleRectangle('rect1')">Date 1</div>
+            <div class="details">Détails de l'événement pour Date 1</div>
+        </div>
+        <div class="rectangle" id="rect2">
+            <div class="header" onclick="toggleRectangle('rect2')">Date 2</div>
+            <div class="details">Détails de l'événement pour Date 2</div>
+        </div>
+        <div class="rectangle" id="rect3">
+            <div class="header" onclick="toggleRectangle('rect3')">Date 3</div>
+            <div class="details">Détails de l'événement pour Date 3</div>
+        </div>
+        <div class="rectangle" id="rect4">
+            <div class="header" onclick="toggleRectangle('rect4')">Date 4</div>
+            <div class="details">Détails de l'événement pour Date 4</div>
+        </div>
+    </div>
+    <script src="script/script_program.js"></script>
+</body>
+</html>
