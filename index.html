@@ -20,14 +20,30 @@
             </ul>
         </nav>
     </header>
-    <div id="global_map">
-    <h2>Interactive map</h2>
-    <p id="hint_mouse">Pass your mouse over the dots to see more about the places I visited.</p>
 
-    <img id="bgNLImage" src="img/blankNetherlandMap.jpg">
+    <div id="global_map">
+        <h2>Interactive map</h2>
+        <p id="hint_mouse">Pass your mouse over the dots to see more about the places I visited.</p>
+
+            <div class="container">
+            <img id="bgNLImage" src="img/blankNetherlandMap.jpg">
+            <div class="point" style="top: 20%; left: 30%;">
+                <div class="tooltip">Point d'intérêt 1</div>
+            </div>
+            <div class="point" style="top: 50%; left: 60%;">
+                <div class="tooltip">Point d'intérêt 2</div>
+            </div>
+            <div class="point" style="top: 83%; left: 34%;">
+                <div class="tooltip">Europan Commission
+                    <span class="pointDescription">The European Commission is a gigantic building, situated in Brussels, built in 1958. It is the home of the european commission and the european council.</span>
+                </div>
+            </div>
+        
     </div>
+    
     <footer>
         <p>Copyright &copy;Clément Mernier 2024-2026</p>
     </footer>
+    <script src="script/main_script.js"></script>
 </body>
 </html>

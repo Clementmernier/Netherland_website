@@ -90,3 +90,41 @@ footer {
     margin: 10%;
     margin-top: 3%;
 }
+.container {
+    position: relative;
+}
+
+
+.point {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    border: solid 2px black;
+    transition: transform 0.3s;
+}
+
+.point:hover {
+    transform: scale(1.5);
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+    pointer-events: none;
+    display: none; /* Caché par défaut */
+    transform: translate(-50%, -120%); /* Positionné au-dessus du point */
+    width: 150px;
+}
+
+.point:hover .tooltip {
+    display: block; /* Affiché au survol */
+}
+.pointDescription{
+    font-size: 0.5em;
+    text-align: justify;
+}
