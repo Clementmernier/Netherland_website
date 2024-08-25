@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+/*  ---     ---     ---     NAV   ---     ---     ---  */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    padding-bottom: 1.5em;
+    text-align: center;
+    position: relative; /* Nécessaire pour positionner l'image */
+}
+
+.roundFlagHeader {
+    position: absolute; /* Permet de positionner l'image indépendamment du flux normal du document */
+    
+    top: 0; /* Aligne l'image en haut */
+    height: 100%; /* Fait en sorte que l'image prenne toute la hauteur du header */
+    object-fit: cover; /* Assure que l'image garde ses proportions */
+}
+#leftFlag{left: 0;}
+#rightFlag{left: 87%;}
+nav{
+    position: relative;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+h2{
+    font-size: 2.25em;
+    margin: 6%;
+    text-align: center;
+    text-decoration: underline;
+}
+.container {
+    width: 80%;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.rectangle {
+    background-color: #fff;
+    margin: 20px 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, box-shadow 0.3s ease;
+    max-height: 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #1e3085;
+}
+
+.rectangle:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+    padding: 15px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    user-select: none;
+}
+
+.header:hover {
+    background-color: #45a049;
+}
+
+.details {
+    padding: 20px;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+    display: none;
+    font-size: 16px;
+    border-radius: 0 0 8px 8px;
+}
+
+.rectangle.active {
+    max-height: 300px; /* Ajuste la hauteur pour afficher les détails */
+    border-left-color: #ff9800;
+}
+
+.rectangle.active .details {
+    display: block;
+}
